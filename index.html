@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luce di Strada — Italian Ristorante & Bar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header id="navbar">
+    <div class="container inner">
+      <div class="logo" onclick="scrollToSection('hero')">
+        <img src="images/IMG_3254_1780606013829.jpeg" alt="Luce di Strada Logo" />
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="main-nav">
+        <a href="#about"        onclick="closeMenu()">About</a>
+        <a href="#menu"         onclick="closeMenu()">Menu</a>
+        <a href="#gallery"      onclick="closeMenu()">Gallery</a>
+        <a href="#reservations" onclick="closeMenu()" class="btn-nav-reserve">Reservations</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg">
+      <img src="images/hero-bg.png" alt="Luce di Strada dining room" />
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-subtitle">Italian Ristorante &amp; Bar</p>
+      <h1>Luce di Strada</h1>
+      <div class="hero-line"></div>
+      <p class="hero-tagline">A romantic evening in Milan — timeless, refined, and deeply Italian.</p>
+      <div class="hero-buttons">
+        <a href="#reservations" class="btn-primary">Make a Reservation</a>
+        <a href="#menu"         class="btn-outline">Explore Menu</a>
+      </div>
+    </div>
+    <div class="scroll-indicator" onclick="scrollToSection('about')">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-photos reveal-left">
+          <img class="about-photo-main"      src="images/IMG_3255_1780606013828.jpeg" alt="Truffle pasta and wine cellar" />
+          <img class="about-photo-secondary" src="images/wine-cellar.png"             alt="Rustic wine cellar" />
+        </div>
+        <div class="about-text reveal-right">
+          <span class="section-label">Our Story</span>
+          <h2>The Light of<br>the Street</h2>
+          <div class="prose">
+            <p>Luce di Strada brings the timeless elegance of Milanese dining to your neighborhood. Born from a passion for authentic Italian culinary traditions, we offer a sanctuary where time slows down and every meal is a celebration.</p>
+            <p>Our chefs craft exquisite pasta and risotto dishes using recipes passed down through generations, elevated with the finest ingredients and modern refinement.</p>
+            <p>Set against the backdrop of our rustic wine cellar and the warm glow of candlelight, a dinner at Luce di Strada is more than a meal — it is a romantic journey to the heart of Italy.</p>
+          </div>
+          <div class="about-stats">
+            <div>
+              <h3>Artisan</h3>
+              <p>Handcrafted pastas made fresh daily</p>
+            </div>
+            <div>
+              <h3>Curated</h3>
+              <p>An extensive collection of fine Italian wines</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section id="menu">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-label">Il Menu</span>
+        <h2 class="section-title">Culinary Masterpieces</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="menu-columns">
+
+        <div class="menu-category">
+          <h3>Starters</h3>
+          <div class="menu-item"><div class="menu-item-row"><span class="menu-item-name">Tomato Bruschetta</span><span class="menu-item-dots"></span><span class="menu-item-price">14₼</span></div></div>
+          <div class="menu-item"><div class="menu-item-row"><span class="menu-item-name">Prosciutto Bruschetta</span><span class="menu-item-dots"></span><span class="menu-item-price">18₼</span></div></div>
+          <div class="menu-item"><div class="menu-item-row"><span class="menu-item-name">Salmon Bruschetta</span><span class="menu-item-dots"></span><span class="menu-item-price">20₼</span></div></div>
+          <div class="menu-item"><div class="menu-item-row"><span class="menu-item-name">Bruschetta Mista</span><span class="menu-item-dots"></span><span class="menu-item-price">25₼</span></div><span class="menu-item-desc">Assorted bruschetta</span></div>
+          <div class="menu-item"><div class="menu-item-row"><span class="menu-item-name">Brie Pomodoro</span><span class="menu-item-dots"></span><span class="menu-item-price">27₼</span></div></div>
+          <div class="menu-item"><div class="menu-item-row"><span class="menu-item-name">Mozzarella Caprese</span><span class="menu-item-dots"></span><span class="menu-item-price">14₼</span></div></div>
+          <div class="menu-item"><div class="menu-item-row"><span class="menu-item-name">Prosciutto Rulo</span><span class="menu-item-dots"></span><span class="menu-item-price">13₼</span></div></div>
+          <div class="menu-item"><div class="menu-item-row"><span class="menu-item-name">Salmon Tartare</span><span class="menu-item-dots"></span><span class="menu-item-price">25₼</span></div></div>
+          <div class="menu-item"><div class="menu-item-row"><span class="menu-item-name">Cheese Board</span><span class="menu-item-dots"></span><span class="menu-item-price">35₼</span></div></div>
+          <div class="menu-item"><div class="menu-item-row"><span class="menu-item-name">Olive Plate</span><span class="menu-item-dots"></span><span class="menu-item-price">12₼</span></div></div>
+        </div>
+
+        <div class="menu-category">
+          <h3>Salads &amp; Soups</h3>
+          <div class="menu-item"><div class="menu-item-row"><span class="menu-item-name">Tomato Soup</span><span class="menu-item-dots"></span><span class="menu-item-price">6₼</span></div></div>
+          <div class="menu-item"><div class="menu-item-row"><span class="menu-item-name">Burrata Caprese Salad</span><span class="menu-item-dots"></span><span class="menu-item-price">17₼</span></div></div>
+          <div class="menu-item"><div class="menu-item-row"><span class="menu-item-name">Rucola Salad</span><span class="menu-item-dots"></span><span class="menu-item-price">16₼</span></div></div>
+          <div class="menu-item"><div class="menu-item-row"><span class="menu-item-name">Mediterranean Salad</span><span class="menu-item-dots"></span><span class="menu-item-price">15₼</span></div></div>
+          <div class="menu-item"><div class="menu-item-row"><span class="menu-item-name">Caesar Salad</span><span class="menu-item-dots"></span><span class="menu-item-price">16₼</span></div></div>
+          <div class="menu-item"><div class="menu-item-row"><span class="menu-item-name">Steak Salad</span><span class="menu-item-dots"></span><span class="menu-item-price">18₼</span></div></div>
+          <div class="menu-item"><div class="menu-item-row"><span class="menu-item-name">Tuna Salad</span><span class="menu-item-dots"></span><span class="menu-item-price">16₼</span></div></div>
+          <div class="menu-item"><div class="menu-item-row"><span class="menu-item-name">Halloumi Salad</span><span class="menu-item-dots"></span><span class="menu-item-price">17₼</span></div></div>
+        </div>
+
+        <div class="menu-category">
+          <h3>Pasta &amp; Risotto</h3>
+          <div class="menu-item"><div class="menu-item-row"><span class="menu-item-name">Truffle Ravioli</span><span class="menu-item-dots"></span><span class="menu-item-price">28₼</span></div></div>
+          <div class="menu-item"><div class="menu-item-row"><span class="menu-item-name">Tortellini</span><span class="menu-item-dots"></span><span class="menu-item-price">26₼</span></div></div>
+          <div class="menu-item"><div class="menu-item-row"><span class="menu-item-name">Spaghetti Meatball</span><span class="menu-item-dots"></span><span class="menu-item-price">20₼</span></div></div>
+          <div class="menu-item"><div class="menu-item-row"><span class="menu-item-name">Spaghetti Truffle</span><span class="menu-item-dots"></span><span class="menu-item-price">18₼</span></div></div>
+          <div class="menu-item"><div class="menu-item-row"><span class="menu-item-name">Tagliatelle Bolognese</span><span class="menu-item-dots"></span><span class="menu-item-price">18₼</span></div></div>
+          <div class="menu-item"><div class="menu-item-row"><span class="menu-item-name">Tagliatelle Spinaci</span><span class="menu-item-dots"></span><span class="menu-item-price">17₼</span></div></div>
+          <div class="menu-item"><div class="menu-item-row"><span class="menu-item-name">Tagliatelle Pollo</span><span class="menu-item-dots"></span><span class="menu-item-price">18₼</span></div></div>
+          <div class="menu-item"><div class="menu-item-row"><span class="menu-item-name">Rigatoni Funghi</span><span class="menu-item-dots"></span><span class="menu-item-price">15₼</span></div></div>
+          <div class="menu-item"><div class="menu-item-row"><span class="menu-item-name">Rigatoni Arrabiata</span><span class="menu-item-dots"></span><span class="menu-item-price">15₼</span></div></div>
+          <div class="menu-item"><div class="menu-item-row"><span class="menu-item-name">Rigatoni Alla Norma</span><span class="menu-item-dots"></span><span class="menu-item-price">17₼</span></div></div>
+          <div class="menu-item"><div class="menu-item-row"><span class="menu-item-name">Rigatoni Pesto</span><span class="menu-item-dots"></span><span class="menu-item-price">16₼</span></div></div>
+          <div class="menu-item"><div class="menu-item-row"><span class="menu-item-name">Rigatoni Bistecca</span><span class="menu-item-dots"></span><span class="menu-item-price">20₼</span></div></div>
+          <div class="menu-item"><div class="menu-item-row"><span class="menu-item-name">Lasagne</span><span class="menu-item-dots"></span><span class="menu-item-price">19₼</span></div></div>
+          <div class="menu-item"><div class="menu-item-row"><span class="menu-item-name">Spinaci Lasagne</span><span class="menu-item-dots"></span><span class="menu-item-price">17₼</span></div></div>
+          <div class="menu-item"><div class="menu-item-row"><span class="menu-item-name">Vegetale Risotto</span><span class="menu-item-dots"></span><span class="menu-item-price">18₼</span></div></div>
+          <div class="menu-item"><div class="menu-item-row"><span class="menu-item-name">Risotto Pollo</span><span class="menu-item-dots"></span><span class="menu-item-price">20₼</span></div></div>
+          <div class="menu-item"><div class="menu-item-row"><span class="menu-item-name">Risotto Bistecca</span><span class="menu-item-dots"></span><span class="menu-item-price">22₼</span></div></div>
+        </div>
+
+        <div class="menu-category">
+          <h3>Pizza</h3>
+          <div class="menu-item"><div class="menu-item-row"><span class="menu-item-name">Chef Speciale</span><span class="menu-item-dots"></span><span class="menu-item-price">22₼</span></div></div>
+          <div class="menu-item"><div class="menu-item-row"><span class="menu-item-name">Mista</span><span class="menu-item-dots"></span><span class="menu-item-price">21₼</span></div></div>
+          <div class="menu-item"><div class="menu-item-row"><span class="menu-item-name">Bolognese</span><span class="menu-item-dots"></span><span class="menu-item-price">21₼</span></div></div>
+          <div class="menu-item"><div class="menu-item-row"><span class="menu-item-name">Prosciutto</span><span class="menu-item-dots"></span><span class="menu-item-price">20₼</span></div></div>
+          <div class="menu-item"><div class="menu-item-row"><span class="menu-item-name">Pesto Pollo</span><span class="menu-item-dots"></span><span class="menu-item-price">20₼</span></div></div>
+          <div class="menu-item"><div class="menu-item-row"><span class="menu-item-name">Burrata</span><span class="menu-item-dots"></span><span class="menu-item-price">19₼</span></div></div>
+          <div class="menu-item"><div class="menu-item-row"><span class="menu-item-name">Pepperoni</span><span class="menu-item-dots"></span><span class="menu-item-price">19₼</span></div></div>
+          <div class="menu-item"><div class="menu-item-row"><span class="menu-item-name">4 Formaggi</span><span class="menu-item-dots"></span><span class="menu-item-price">18₼</span></div></div>
+          <div class="menu-item"><div class="menu-item-row"><span class="menu-item-name">Pollo Griglia</span><span class="menu-item-dots"></span><span class="menu-item-price">18₼</span></div></div>
+          <div class="menu-item"><div class="menu-item-row"><span class="menu-item-name">Spinaci</span><span class="menu-item-dots"></span><span class="menu-item-price">17₼</span></div></div>
+          <div class="menu-item"><div class="menu-item-row"><span class="menu-item-name">Funghi</span><span class="menu-item-dots"></span><span class="menu-item-price">16₼</span></div></div>
+          <div class="menu-item"><div class="menu-item-row"><span class="menu-item-name">Margherita</span><span class="menu-item-dots"></span><span class="menu-item-price">15₼</span></div></div>
+        </div>
+
+        <div class="menu-category">
+          <h3>Desserts</h3>
+          <div class="menu-item"><div class="menu-item-row"><span class="menu-item-name">Chocolate Soufflé</span><span class="menu-item-dots"></span><span class="menu-item-price">15₼</span></div></div>
+          <div class="menu-item"><div class="menu-item-row"><span class="menu-item-name">Tiramisu</span><span class="menu-item-dots"></span><span class="menu-item-price">10₼</span></div></div>
+          <div class="menu-item"><div class="menu-item-row"><span class="menu-item-name">Oreo Dolce Vita</span><span class="menu-item-dots"></span><span class="menu-item-price">10₼</span></div></div>
+          <div class="menu-item"><div class="menu-item-row"><span class="menu-item-name">Strawberry Dolce Vita</span><span class="menu-item-dots"></span><span class="menu-item-price">10₼</span></div></div>
+        </div>
+
+        <div class="menu-note">Service charge: 10%</div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-label">La Galleria</span>
+        <h2 class="section-title">A Feast for the Senses</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item g-wide reveal">
+          <img src="images/IMG_3256_1780606013828.jpeg" alt="Risotto and wine" />
+          <div class="overlay"></div>
+        </div>
+        <div class="gallery-item g-narrow reveal">
+          <img src="images/wine-pour.png" alt="Pouring wine" />
+          <div class="overlay"></div>
+        </div>
+        <div class="gallery-item g-full reveal">
+          <img src="images/pasta-detail.png" alt="Handmade pasta" style="object-position:center 40%;" />
+          <div class="overlay"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESERVATIONS -->
+  <section id="reservations">
+    <div class="container">
+      <div class="res-grid">
+        <div class="reservation-info reveal-left">
+          <span class="section-label">Reservations</span>
+          <h2 class="section-title">Join Us for Dinner</h2>
+          <p class="intro">Experience the magic of Luce di Strada. For parties of 6 or more, please contact us directly by phone.</p>
+          <div class="info-block">
+            <h4>Location</h4>
+            <p>123 Strada Della Luce<br />Milan District, City Center 10012</p>
+          </div>
+          <div class="info-block">
+            <h4>Hours</h4>
+            <p>Monday – Thursday: 5:00 PM – 10:30 PM<br />Friday – Sunday: 4:00 PM – 11:30 PM</p>
+          </div>
+          <div class="info-block">
+            <h4>Contact</h4>
+            <p>+1 (555) 123-4567<br />reservations@lucedistrada.com</p>
+          </div>
+        </div>
+        <div class="booking-form-wrap reveal-right">
+          <h3>Book a Table</h3>
+          <form id="reservation-form" novalidate>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="f-name">Full Name</label>
+                <input id="f-name" type="text" placeholder="John Doe" />
+                <span class="form-error" id="err-name">Please enter your name.</span>
+              </div>
+              <div class="form-group">
+                <label for="f-email">Email</label>
+                <input id="f-email" type="email" placeholder="john@example.com" />
+                <span class="form-error" id="err-email">Please enter a valid email.</span>
+              </div>
+              <div class="form-group">
+                <label for="f-phone">Phone</label>
+                <input id="f-phone" type="tel" placeholder="+1 (555) 000-0000" />
+                <span class="form-error" id="err-phone">Please enter your phone number.</span>
+              </div>
+              <div class="form-group">
+                <label for="f-guests">Guests</label>
+                <select id="f-guests">
+                  <option value="1">1 Person</option>
+                  <option value="2" selected>2 People</option>
+                  <option value="3">3 People</option>
+                  <option value="4">4 People</option>
+                  <option value="5">5 People</option>
+                  <option value="6+">6+ People (Call Us)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="f-date">Date</label>
+                <input id="f-date" type="date" />
+                <span class="form-error" id="err-date">Please select a date.</span>
+              </div>
+              <div class="form-group">
+                <label for="f-time">Time</label>
+                <input id="f-time" type="time" />
+                <span class="form-error" id="err-time">Please select a time.</span>
+              </div>
+            </div>
+            <button type="submit" class="btn-submit">Request Reservation</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container foot-inner">
+      <img class="foot-logo" src="images/IMG_3254_1780606013829.jpeg" alt="Luce di Strada Logo" />
+      <div class="foot-links">
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#reservations">Reservations</a>
+      </div>
+      <p class="foot-copy">
+        &copy; <span id="year"></span> Luce di Strada &mdash; Italian Ristorante &amp; Bar. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Toast -->
+  <div class="toast" id="toast">
+    <div class="toast-title">Reservation Request Sent</div>
+    <div class="toast-msg">We will contact you shortly to confirm your table.</div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
